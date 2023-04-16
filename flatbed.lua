@@ -57,6 +57,20 @@ Citizen.CreateThread(function()
                     prop13 = CreateObject(GetHashKey("prop_chair_08"), 0.0, 0.0, 0.0, true, true, true)
                     AttachEntityToEntity(prop13, vehicle, boneIndex1, 0.95, -0.4, 1.0, 0.0, 0.0, -90.0, true, true, false, true, 1, true)
                 end
+                if not DoesEntityExist(prop14) then
+                    prop14 = CreateObject(GetHashKey("prop_ballistic_shield"), 0.0, 0.0, 0.0, true, true, true)
+                    AttachEntityToEntity(prop14, vehicle, boneIndex1, 0.0, 4.36, 0.2, 0.0, 0.0, 180.0, true, true, false, true, 1, true)
+                end
+                if not DoesEntityExist(prop15) then
+                    prop15 = CreateObject(GetHashKey("prop_ballistic_shield"), 0.0, 0.0, 0.0, true, true, true)
+                    AttachEntityToEntity(prop15, vehicle, boneIndex1, 0.65, 4.35, 0.2, 0.0, 0.0, 180.0, true, true, false, true, 1, true)
+                end
+                if not DoesEntityExist(prop16) then
+                    prop16 = CreateObject(GetHashKey("prop_ballistic_shield"), 0.0, 0.0, 0.0, true, true, true)
+                    AttachEntityToEntity(prop16, vehicle, boneIndex1, -0.65, 4.35, 0.2, 0.0, 0.0, 180.0, true, true, false, true, 1, true)
+                end
+
+                
             end
         end
     end
