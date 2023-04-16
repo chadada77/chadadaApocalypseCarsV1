@@ -8,11 +8,6 @@ Citizen.CreateThread(function()
             local vehicle = GetVehiclePedIsIn(playerPed, false)
             if GetEntityModel(vehicle) == GetHashKey("wastelander") then
                 local boneIndex1 = GetEntityBoneIndexByName(vehicle, "motor")
-                local boneIndex2 = GetEntityBoneIndexByName(vehicle, "exhaust")
-                SetVehicleHandlingFloat(vehicle, "CHandlingData", "fMass", GetVehicleHandlingFloat(vehicle, "CHandlingData", "fMass") * 5.0)
-                SetVehicleHandlingVector(vehicle, "CHandlingData", "vecCentreOfMassOffset", vector3(0.0, 5.0, 5.0))
-
-                
                 if not DoesEntityExist(prop3) then
                     prop3 = CreateObject(GetHashKey("prop_chair_08"), 0.0, 0.0, 0.0, true, true, true)
                     AttachEntityToEntity(prop3, vehicle, boneIndex1, 1.2, -2.4, 1.3, 0.0, 0.0, 180.0, true, true, false, true, 1, true)

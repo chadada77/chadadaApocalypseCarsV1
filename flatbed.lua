@@ -8,7 +8,6 @@ Citizen.CreateThread(function()
             local vehicle = GetVehiclePedIsIn(playerPed, false)
             if GetEntityModel(vehicle) == GetHashKey("flatbed") then
                 local boneIndex1 = GetEntityBoneIndexByName(vehicle, "motor")
-                local boneIndex2 = GetEntityBoneIndexByName(vehicle, "exhaust")
 
                 if not DoesEntityExist(prop2) then
                     prop2 = CreateObject(GetHashKey("prop_container_03_ld"), 0.0, 0.0, 0.0, true, true, true)
