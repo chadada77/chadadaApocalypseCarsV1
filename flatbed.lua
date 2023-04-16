@@ -9,8 +9,6 @@ Citizen.CreateThread(function()
             if GetEntityModel(vehicle) == GetHashKey("flatbed") then
                 local boneIndex1 = GetEntityBoneIndexByName(vehicle, "motor")
                 local boneIndex2 = GetEntityBoneIndexByName(vehicle, "exhaust")
-                SetVehicleHandlingFloat(vehicle, "CHandlingData", "fMass", GetVehicleHandlingFloat(vehicle, "CHandlingData", "fMass") * 5.0)
-                SetVehicleHandlingVector(vehicle, "CHandlingData", "vecCentreOfMassOffset", vector3(0.0, 5.0, 5.0))
 
                 if not DoesEntityExist(prop2) then
                     prop2 = CreateObject(GetHashKey("prop_container_03_ld"), 0.0, 0.0, 0.0, true, true, true)
