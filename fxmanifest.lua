@@ -2,7 +2,7 @@ fx_version 'cerulean'
 games { 'gta5' }
 
 author 'Chadada'
-description 'Standalone Tween'
+description 'chadadaApocalypseCarsV1'
 version '1.0.0'
 
 client_scripts {
